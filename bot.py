@@ -11,13 +11,12 @@ from urllib.parse import urlparse
 # ==========================================
 # 💎 SECURE PRO MATRIX CONFIGURATION 💎
 # ==========================================
-# Tokens ab GitHub Secrets se aayenge (Public Code mein nahi dikhenge)
 AUTH_TOKEN = os.environ.get("AUTH_TOKEN", "").strip()
 GITHUB_TOKEN = os.environ.get("GH_PAT", "").strip()
 
 # Sirf ye public rahega:
 GITHUB_USERNAME = "imlalitkashyap" # UPDATE THIS
-GITHUB_REPO = "Tests" # Teri Private Data repo ka naam
+GITHUB_REPO = "Tests" 
 GITHUB_FOLDER = "data"
 
 TEST_SERIES_LINK = os.environ.get("SERIES_LINK", "").strip()
@@ -50,6 +49,10 @@ class MatrixExtractor:
         path = urlparse(url).path.strip('/').split('/')
         if 'test-series' in path: return path[path.index('test-series') - 1]
         return path[-1]
+
+    # 🛠️ THE MISSING FUNCTION IS BACK! 🛠️
+    def submit(self, tid):
+        self.fetch(f"https://api-new.testbook.com/api/v2/tests/{tid}", params={"auth_code": self.auth_token, "language": "English", "attemptNo": 1}, method='POST', json_data={"task": "submit"})
 
     def clean(self, txt):
         if isinstance(txt, dict): txt = txt.get('text', txt.get('value', ''))
@@ -138,6 +141,8 @@ def run():
         q_en = ext.fetch(f"https://api-new.testbook.com/api/v2/tests/{tid}", params={"auth_code": AUTH_TOKEN, "language": "English"})
         if not q_en: continue
         q_hn = ext.fetch(f"https://api-new.testbook.com/api/v2/tests/{tid}", params={"auth_code": AUTH_TOKEN, "language": "Hindi"})
+        
+        # Ye rahi missing line jo solve ho gayi!
         ext.submit(tid)
         time.sleep(0.8)
         
