@@ -1,0 +1,57 @@
+name: SPIDYUNIVERSE Unlimited Matrix Extractor
+
+on:
+  workflow_dispatch: 
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false 
+      matrix:
+        series_link: [
+          "https://testbook.com/rrb-je/test-series/my",
+          "https://testbook.com/rrb-ntpc/test-series/my",
+          "https://testbook.com/ssc-stenographer/test-series/my",
+          "https://testbook.com/ssc-cgl/test-series/my",
+          "https://testbook.com/rrb-group-d/test-series/my",
+          "https://testbook.com/rrb-alp/test-series/my",
+          "https://testbook.com/ssc-chsl/test-series/my",
+          "https://testbook.com/ssc-gd-constable/test-series/my",
+          "https://testbook.com/nda/test-series/my",
+          "https://testbook.com/ibps-rrb-po/test-series/my",
+          "https://testbook.com/ibps-clerk/test-series/my",
+          "https://testbook.com/rrb-technician/test-series/my",
+          "https://testbook.com/sbi-po/test-series/my",
+          "https://testbook.com/ssc-cpo/test-series/my",
+          "https://testbook.com/cds/test-series/my",
+          "https://testbook.com/sbi-clerk/test-series/my",
+          "https://testbook.com/ibps-po/test-series/my",
+          "https://testbook.com/ssc-mts/test-series/my",
+          "https://testbook.com/uptet/test-series/my",
+          "https://testbook.com/ctet/test-series/my",
+          "https://testbook.com/afcat/test-series/my",
+          "https://testbook.com/rajasthan-3rd-grade-teacher/test-series/my",
+          "https://testbook.com/super-tet/test-series/my",
+          "https://testbook.com/reet/test-series/my",
+          "https://testbook.com/indian-navy-mr/test-series/my"
+        ]
+    
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: pip install requests
+
+      - name: Run Extraction Engine
+        env:
+          SERIES_LINK: ${{ matrix.series_link }}
+          AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: python bot.py
