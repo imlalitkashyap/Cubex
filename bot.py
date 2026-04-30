@@ -14,8 +14,8 @@ from urllib.parse import urlparse
 AUTH_TOKEN = os.environ.get("AUTH_TOKEN", "").strip()
 GITHUB_TOKEN = os.environ.get("GH_PAT", "").strip()
 
-GITHUB_USERNAME = "your_github_username_here" # APNA USERNAME YAHAN DAAL LENA
-GITHUB_REPO = "tests"
+GITHUB_USERNAME = "imlalitkashyap" # APNA USERNAME YAHAN DAAL LENA
+GITHUB_REPO = "Tests"
 GITHUB_FOLDER = "data"
 
 TEST_SERIES_LINK = os.environ.get("SERIES_LINK", "").strip()
