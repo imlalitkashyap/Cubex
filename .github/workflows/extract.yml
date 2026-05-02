@@ -10,6 +10,19 @@ jobs:
       fail-fast: false 
       matrix:
         series_link: [
+          # 🎓 ENTRANCE / UG / PG EXAMS
+          "https://testbook.com/cuet/test-series/my",
+          "https://testbook.com/cuet-pg/test-series/my",
+          "https://testbook.com/cuet-domain-subjects/test-series/my",
+          "https://testbook.com/jee-main/test-series/my",
+          "https://testbook.com/jee-advanced/test-series/my",
+          "https://testbook.com/neet/test-series/my",
+          "https://testbook.com/gate/test-series/my",
+          "https://testbook.com/ugc-net/test-series/my",
+          "https://testbook.com/csir-net/test-series/my",
+          "https://testbook.com/iit-jam/test-series/my",
+          "https://testbook.com/cat/test-series/my",
+
           # 🚔 POLICE EXAMS
           "https://testbook.com/up-police-constable/test-series/my",
           "https://testbook.com/up-police-si/test-series/my",
@@ -35,6 +48,9 @@ jobs:
           "https://testbook.com/ts-police-constable/test-series/my",
           "https://testbook.com/uk-police-constable/test-series/my",
           "https://testbook.com/jkssb-police/test-series/my",
+          "https://testbook.com/chandigarh-police-constable/test-series/my",
+          "https://testbook.com/kerala-police-constable/test-series/my",
+          "https://testbook.com/hp-police-constable/test-series/my",
 
           # 🪖 ARMY / DEFENCE / PARAMILITARY EXAMS
           "https://testbook.com/indian-army-gd-agniveer/test-series/my",
@@ -58,53 +74,180 @@ jobs:
           "https://testbook.com/itbp/test-series/my",
           "https://testbook.com/ssb-recruitment/test-series/my",
           "https://testbook.com/acc/test-series/my",
+          "https://testbook.com/upsc-capf-ac/test-series/my",
+          "https://testbook.com/crpf-constable/test-series/my",
+          "https://testbook.com/navy-tradesman-mate/test-series/my",
           "https://testbook.com/rpf-constable/test-series/my",
           "https://testbook.com/rpf-si/test-series/my",
+          "https://testbook.com/army-havildar-sac/test-series/my",
 
-          # 🎓 ENTRANCE EXAMS (JEE / NEET / GATE / CUET)
-          "https://testbook.com/neet/test-series/my",
-          "https://testbook.com/jee-main/test-series/my",
-          "https://testbook.com/jee-advanced/test-series/my",
-          "https://testbook.com/gate/test-series/my",
-          "https://testbook.com/cuet/test-series/my",
-          "https://testbook.com/ugc-net/test-series/my",
-
-          # 🏦 BANKING EXAMS
-          "https://testbook.com/rbi-grade-b/test-series/my",
-          "https://testbook.com/rbi-assistant/test-series/my",
-          "https://testbook.com/nabard-development-assistant/test-series/my",
-          "https://testbook.com/ibps-rrb-office-assistant/test-series/my",
-          "https://testbook.com/ibps-so/test-series/my",
-          "https://testbook.com/ecgc-po/test-series/my",
-
-          # 🏛️ UPSC / STATE PSC EXAMS
+          # 🏛️ UPSC / CIVIL SERVICES EXAMS
           "https://testbook.com/upsc-civil-services/test-series/my",
           "https://testbook.com/uppsc/test-series/my",
           "https://testbook.com/uppsc-ro-aro/test-series/my",
+          "https://testbook.com/upsc-epfo/test-series/my",
+          "https://testbook.com/upsc-ifs/test-series/my",
+          "https://testbook.com/upsc-cms/test-series/my",
+          "https://testbook.com/upsc-apfc/test-series/my",
+          "https://testbook.com/upsc-cdpo/test-series/my",
+
+          # 🏛️ STATE PSC EXAMS
           "https://testbook.com/bpsc-exam/test-series/my",
           "https://testbook.com/bpsc-aso/test-series/my",
           "https://testbook.com/mppsc-state-service/test-series/my",
+          "https://testbook.com/mppsc-forest-service/test-series/my",
           "https://testbook.com/rpsc/test-series/my",
+          "https://testbook.com/rpsc-ras/test-series/my",
+          "https://testbook.com/mpsc-state-service/test-series/my",
+          "https://testbook.com/tspsc-group-1/test-series/my",
+          "https://testbook.com/tspsc-group-2/test-series/my",
+          "https://testbook.com/appsc-group-1/test-series/my",
+          "https://testbook.com/appsc-group-2/test-series/my",
+          "https://testbook.com/appsc-group-3/test-series/my",
+          "https://testbook.com/tnpsc-group-1/test-series/my",
+          "https://testbook.com/tnpsc-group-2/test-series/my",
+          "https://testbook.com/tnpsc-group-4/test-series/my",
+          "https://testbook.com/tnpsc-group-2a/test-series/my",
+          "https://testbook.com/wbcs/test-series/my",
+          "https://testbook.com/wbpsc/test-series/my",
+          "https://testbook.com/kpsc-kas/test-series/my",
+          "https://testbook.com/kpsc-group-a/test-series/my",
+          "https://testbook.com/cgpsc/test-series/my",
+          "https://testbook.com/jpsc-civil-services/test-series/my",
+          "https://testbook.com/hppsc-hpas/test-series/my",
+          "https://testbook.com/hpsc-hcs/test-series/my",
+          "https://testbook.com/opsc-oas/test-series/my",
+          "https://testbook.com/ukpsc-lower-pcs/test-series/my",
+          "https://testbook.com/ukpsc-combined-upper-subordinate-service/test-series/my",
+          "https://testbook.com/gpsc/test-series/my",
+          "https://testbook.com/ppsc/test-series/my",
+          "https://testbook.com/punjab-civil-service-exam/test-series/my",
+          "https://testbook.com/karnataka-sda/test-series/my",
+          "https://testbook.com/haryana-civil-services/test-series/my",
+          "https://testbook.com/jkpsc-kas/test-series/my",
+          "https://testbook.com/manipur-psc/test-series/my",
+          "https://testbook.com/goa-psc/test-series/my",
+          "https://testbook.com/tripura-civil-service/test-series/my",
+          "https://testbook.com/gujarat-administrative-service/test-series/my",
+          "https://testbook.com/kerala-psc-kas/test-series/my",
+
+          # 📋 STATE SUBORDINATE / SSC EXAMS
+          "https://testbook.com/upsssc-pet/test-series/my",
+          "https://testbook.com/upsssc-vdo/test-series/my",
+          "https://testbook.com/up-lekhpal/test-series/my",
+          "https://testbook.com/uttarakhand-patwari/test-series/my",
+          "https://testbook.com/psssb-vdo/test-series/my",
+          "https://testbook.com/bssc-inter-level/test-series/my",
+          "https://testbook.com/jssc-cgl/test-series/my",
+          "https://testbook.com/ossc-cgl/test-series/my",
+          "https://testbook.com/ossc-chsl/test-series/my",
+          "https://testbook.com/ossc-pet/test-series/my",
+          "https://testbook.com/haryana-cet-group-c/test-series/my",
+          "https://testbook.com/haryana-cet/test-series/my",
+          "https://testbook.com/upsssc-junior-assistant/test-series/my",
+          "https://testbook.com/upsssc-lower-pcs/test-series/my",
+          "https://testbook.com/ssc-selection-post/test-series/my",
+          "https://testbook.com/uppsc-beo/test-series/my",
+          "https://testbook.com/uppsc-lecturer/test-series/my",
+
+          # 📜 RAJASTHAN STATE EXAMS
+          "https://testbook.com/rajasthan-patwari/test-series/my",
+          "https://testbook.com/rajasthan-patwari-rankers/test-series/my",
+          "https://testbook.com/rsmssb-grade-4/test-series/my",
+          "https://testbook.com/rsmssb-conductor/test-series/my",
+          "https://testbook.com/rajasthan-jail-prahari/test-series/my",
+          "https://testbook.com/rajasthan-gram-sevak/test-series/my",
+          "https://testbook.com/rajasthan-fireman/test-series/my",
+          "https://testbook.com/rajasthan-police-constable/test-series/my",
+          "https://testbook.com/rpsc-2nd-grade/test-series/my",
+          "https://testbook.com/rajasthan-informatics-assistant/test-series/my",
+          "https://testbook.com/jvvnl-technical-helper/test-series/my",
+          "https://testbook.com/rvunl-je/test-series/my",
+          "https://testbook.com/rsmssb-pti/test-series/my",
 
           # 📚 TEACHING EXAMS
           "https://testbook.com/kvs/test-series/my",
           "https://testbook.com/nvs/test-series/my",
           "https://testbook.com/dsssb/test-series/my",
+          "https://testbook.com/dsssb-librarian/test-series/my",
           "https://testbook.com/mp-tet/test-series/my",
           "https://testbook.com/bihar-stet/test-series/my",
+          "https://testbook.com/bpsc-tre/test-series/my",
           "https://testbook.com/up-tgt/test-series/my",
           "https://testbook.com/up-pgt/test-series/my",
+          "https://testbook.com/emrs-tgt/test-series/my",
+          "https://testbook.com/emrs-pgt/test-series/my",
+          "https://testbook.com/tn-trb-sgt/test-series/my",
+          "https://testbook.com/hp-pgt/test-series/my",
+          "https://testbook.com/chandigarh-jbt/test-series/my",
+          "https://testbook.com/oavs-tgt/test-series/my",
+          "https://testbook.com/west-bengal-primary-teacher/test-series/my",
+
+          # 🏦 BANKING / INSURANCE EXAMS
+          "https://testbook.com/rbi-grade-b/test-series/my",
+          "https://testbook.com/rbi-assistant/test-series/my",
+          "https://testbook.com/nabard-development-assistant/test-series/my",
+          "https://testbook.com/nabard-grade-a/test-series/my",
+          "https://testbook.com/ibps-rrb-office-assistant/test-series/my",
+          "https://testbook.com/ibps-so/test-series/my",
+          "https://testbook.com/ecgc-po/test-series/my",
+          "https://testbook.com/lic-aao/test-series/my",
+          "https://testbook.com/lic-hfl/test-series/my",
+          "https://testbook.com/esic/test-series/my",
+          "https://testbook.com/sebi-grade-a/test-series/my",
 
           # 🔧 ENGINEERING / TECHNICAL EXAMS
+          "https://testbook.com/ssc-je/test-series/my",
           "https://testbook.com/dfccil/test-series/my",
-          "https://testbook.com/navy-tradesman-mate/test-series/my",
+          "https://testbook.com/drdo-ceptam/test-series/my",
+          "https://testbook.com/nhpc-je/test-series/my",
+          "https://testbook.com/uppcl-technician/test-series/my",
+          "https://testbook.com/uprvunl-je/test-series/my",
+          "https://testbook.com/uprvunl-ae/test-series/my",
+          "https://testbook.com/upmrc-je/test-series/my",
+          "https://testbook.com/dda-je/test-series/my",
+          "https://testbook.com/jssc-je/test-series/my",
+          "https://testbook.com/rrb-je/test-series/my",
+          "https://testbook.com/bsphcl-junior-accounts-clerk/test-series/my",
+          "https://testbook.com/bsphcl-correspondence-clerk/test-series/my",
+          "https://testbook.com/bsphcl-store-assistant/test-series/my",
+          "https://testbook.com/aai-junior-assistant/test-series/my",
+          "https://testbook.com/barc/test-series/my",
+          "https://testbook.com/iocl/test-series/my",
+          "https://testbook.com/ntpc-diploma-trainee/test-series/my",
+          "https://testbook.com/northern-coalfields-limited/test-series/my",
+          "https://testbook.com/pspcl/test-series/my",
+          "https://testbook.com/kptcl/test-series/my",
+          "https://testbook.com/rites/test-series/my",
+          "https://testbook.com/dmrc/test-series/my",
+          "https://testbook.com/npcil/test-series/my",
 
           # 🕵️ INTELLIGENCE / IB EXAMS
           "https://testbook.com/ib-acio/test-series/my",
           "https://testbook.com/ib-mts/test-series/my",
-          "https://testbook.com/ib-security-assistant/test-series/my"
+          "https://testbook.com/ib-security-assistant/test-series/my",
+
+          # ⚖️ JUDICIARY / LAW EXAMS
+          "https://testbook.com/gujarat-judiciary/test-series/my",
+          "https://testbook.com/aibe/test-series/my",
+          "https://testbook.com/bihar-civil-court/test-series/my",
+          "https://testbook.com/rpsc-jlo/test-series/my",
+
+          # 🏥 MEDICAL / NURSING / HEALTH EXAMS
+          "https://testbook.com/aiims-cre/test-series/my",
+          "https://testbook.com/rajasthan-anm/test-series/my",
+          "https://testbook.com/rajasthan-gnm/test-series/my",
+          "https://testbook.com/nimcet/test-series/my",
+          "https://testbook.com/neet-pg/test-series/my",
+
+          # 📊 MISC / MULTI-CATEGORY EXAMS
+          "https://testbook.com/epfo-ssa/test-series/my",
+          "https://testbook.com/current-affairs-mega-pack/test-series/my",
+          "https://testbook.com/comedk-uget/test-series/my",
+          "https://testbook.com/bpsc-aedo/test-series/my",
+          "https://testbook.com/bpsc-cdpo/test-series/my"
         ]
-    
+
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
